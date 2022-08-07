@@ -5,12 +5,16 @@ import ProductCard from './COMPONENTS/products/ProductCard';
 import ProductList from './COMPONENTS/products/ProductList'
 import './App.css';
 import ShoppingCart from './COMPONENTS/ShoppingCart';
+import Announcements from './COMPONENTS/Announcements';
+import Slider from './COMPONENTS/Slider';
 
 
 function App() {
   return (
     <Router>
+      <Announcements />
       <NavBar />
+      <Slider />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<ProductCard />} />
