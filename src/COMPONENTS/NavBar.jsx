@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import { Badge } from '@material-ui/core'
-import { fontSize } from '@mui/system'
+
 
 const Container = styled.div`
   height: 60px;
@@ -65,7 +65,7 @@ const NavBar = () => {
           
         </Center>
         <Right>
-        <Link to="/product">Products</Link>
+        <Link to="/products">Products</Link>
           <Badge badgeContent={4} color="primary">
             {' '}
             <Link to="/cart">

@@ -26,3 +26,7 @@ landing page with all items, and being able to filter through items.
 3. /products - ProductList
 4. /cart - ShoppingCart
 
+define state in app
+
+add form
+Product list pass props
