@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useState } from 'react'
+
+
 
 
 const Container = styled.div`
@@ -10,28 +13,95 @@ padding-top: 50px;
 `
 
 
-const HomePage = ({handleAddProduct}) => {
+
+
+
+const HomePage = ({setProducts, products}) => {
+
+ 
+ 
+    const [title, setTitle]  = useState("")
+    const [price, setPrice]  = useState("")
+    const [category, setCategory]  = useState("")
+    const [description, setDescription] = useState("")
+    const [image, setImage]  = useState("")
+    
+    
+    function handleAddProduct(e) {
+     
+     
+      e.preventDefault()
+
+
+     
+      fetch('http://localhost:3000/items', {
+        method: 'POST',
+        body: JSON.stringify({
+          titles: title,
+          price: price,
+          description: description,
+          category: category,
+          image: image,
+    
+    
+     }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+         .then((response) => response.json())
+         .then((data) => {
+          console.log(data);
+            
+         })
+         .catch((err) => {
+            console.log(err.message);
+         });
+    }
   
-  function handleSubmit(event) {
-    event.preventDefault()
-    handleAddProduct(event)
-  }
-  
+    
   return (
-    <Container>
-  <form onSubmit={handleSubmit}>
+   <Container>
+  <form onSubmit={handleAddProduct}>
   <label>Add Product</label><br></br>
-  <label for="titles">Product Name:</label><br></br>
-  <input type="text" id="title" name="title"></input><br></br>
-  <label for="price">Price:</label><br></br>
-  <input type="text" id="price" name="price"></input><br></br>
-  <label for="description">Description:</label><br></br>
-  <input type="text" id="description" name="description"></input><br></br>
-  <label for="price">Image URL:</label><br></br>
-  <input type="text" id="image" name="image"></input><br></br>
-  <button>Submit</button>
+  <label>Product Name:</label><br></br>
+  <input type="text"
+          
+          value={title}
+          id="title"
+          name="title"
+          onChange={(e) => setTitle(e.target.value)} /><br></br>
+  <label>Price:</label><br></br>
+  <input type="text" 
+          
+          value={price}
+          onChange={(e) => setPrice(e.target.value)}></input><br></br>
+  <label>Description:</label><br></br>
+  <input type="text"
+          
+          value={description}
+          id="description"
+          name="description"
+          onChange={(e) => setDescription(e.target.value)} /><br></br>
+  <label>Category</label><br></br>
+  <input type="text"
+        
+          value={category}
+          id="Category"
+          name="Category"
+          onChange={(e) => setCategory(e.target.value)} /><br></br>
+  <label>Image URL</label><br></br>
+  <input type="text"
+          
+          value={image}
+          id="image"
+          name="image"
+          onChange={(e) => setImage(e.target.value)} /><br></br>
+          
+  <button type="submit">Submit</button>
 </form>
-    </Container> 
+</Container>
+    
   )
 }
 
