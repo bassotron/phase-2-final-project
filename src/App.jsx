@@ -25,7 +25,7 @@ function App() {
         <Route
           path="/products"
           element={
-            <ProductList products={products} updateProduct={setProducts} />
+            <ProductList products={products} setProduct={setProducts} />
           }
         />
         <Route path="/cart" element={<ShoppingCart />} />

@@ -1,12 +1,15 @@
 import React from 'react'
 import ProductCard from './ProductCard'
+import Filter from './Filter'
+import Search from './Search'
 
-const ProductList = ({ products, updateProduct }) => {
-  
-
+const ProductList = ({ products, setProduct }) => {
   return (
     <div>
-     {products.map((products) => (
+      
+      <Search products={products} setProduct={setProduct} />
+      <Filter products={products} updateproduct={setProduct} />
+      {products.map((products) => (
         <ProductCard
           key={products.id}
           title={products.titles}
