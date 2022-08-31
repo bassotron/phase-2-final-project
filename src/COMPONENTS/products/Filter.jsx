@@ -3,8 +3,8 @@ import React from 'react'
 function Filter({ products, setProduct }) {
 	const filterProducts= event => {
 		const value = event.target.value;
-		const filteredMovies = products.filter(product => (`${product.genre}`.includes(value)));
-		setProduct(filteredMovies)
+		const filteredProducts = products.filter(product => (`${product.genre}`.includes(value)));
+		setProduct(filteredProducts)
   }
   return (
     <div>

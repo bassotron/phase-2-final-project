@@ -11,21 +11,24 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3000/items')
       .then((response) => response.json())
-      .then((data) => {
-        setProducts(data)
+      .then((products) => {
+        setProducts(products);
       })
   }, [])
 
+  const onAddProduct = (newProduct) => {
+    setProducts([...products, newProduct])
+  }
   return (
     <Router>
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage onAddProduct={onAddProduct} />} />
         <Route
           path="/products"
           element={
-            <ProductList products={products} setProduct={setProducts} />
+            <ProductList products={products} setProduct={setProducts}  />
           }
         />
         <Route path="/cart" element={<ShoppingCart />} />

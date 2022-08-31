@@ -16,7 +16,7 @@ padding-top: 50px;
 
 
 
-const HomePage = ({setProducts, products}) => {
+const HomePage = ({onAddProduct}) => {
 
  
  
@@ -27,6 +27,8 @@ const HomePage = ({setProducts, products}) => {
     const [image, setImage]  = useState("")
     
     
+
+
     function handleAddProduct(e) {
      
      
@@ -50,14 +52,19 @@ const HomePage = ({setProducts, products}) => {
         },
       })
          .then((response) => response.json())
-         .then((data) => {
-          console.log(data);
+         .then((product) => {
+          onAddProduct(product);
             
          })
          .catch((err) => {
             console.log(err.message);
          });
-    }
+         setTitle("")
+         setPrice("")
+         setDescription("")
+         setCategory("")
+         setImage("")
+        }
   
     
   return (

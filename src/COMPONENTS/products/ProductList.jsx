@@ -3,6 +3,7 @@ import ProductCard from './ProductCard'
 import Filter from './Filter'
 import Search from './Search'
 
+
 const ProductList = ({ products, setProduct }) => {
   return (
     <div>

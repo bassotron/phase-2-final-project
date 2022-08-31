@@ -72,166 +72,21 @@
       "category": "electronics",
       "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
     },
-    {},
     {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
+      "titles": "Really Nice Jacket",
+      "price": "29.99",
+      "description": "Really Nice Jacket",
+      "category": "Men's clothing",
+      "image": "\"\"",
       "id": 11
     },
     {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
+      "titles": "Other Jacket",
+      "price": "20.00",
+      "description": "new",
+      "category": "new",
+      "image": "\"\"",
       "id": 12
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 13
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 14
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 15
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 16
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 17
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 18
-    },
-    {
-      "titles": "titles",
-      "price": "price",
-      "description": "description",
-      "category": "category",
-      "image": "image",
-      "id": 19
-    },
-    {
-      "titles": "titles",
-      "price": "price",
-      "description": "description",
-      "category": "category",
-      "image": "image",
-      "id": 20
-    },
-    {
-      "titles": "undefined",
-      "price": "price",
-      "description": "description",
-      "category": "category",
-      "image": "image",
-      "id": 21
-    },
-    {
-      "titles": "",
-      "price": "price",
-      "description": "description",
-      "category": "category",
-      "image": "image",
-      "id": 22
-    },
-    {
-      "titles": "",
-      "price": "price",
-      "description": "description",
-      "category": "category",
-      "image": "image",
-      "id": 23
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 24
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 25
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 26
-    },
-    {
-      "titles": "",
-      "price": "",
-      "description": "",
-      "category": "",
-      "image": "",
-      "id": 27
-    },
-    {
-      "titles": "d",
-      "price": "d",
-      "description": "d",
-      "category": "d",
-      "image": "d",
-      "id": 28
-    },
-    {
-      "titles": "a",
-      "price": "a",
-      "description": "a",
-      "category": "a",
-      "image": "a",
-      "id": 29
-    },
-    {
-      "titles": "Fancy Jacket",
-      "price": "19.99",
-      "description": "Nice jacket keeps you warm",
-      "category": "Clothing",
-      "image": "",
-      "id": 30
     }
   ]
 }
